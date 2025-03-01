@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ozone Lounge Valley Arcade</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to right, #2c3e50, #000000);
+        color: #333;
+        margin: 0;
+        padding: 0;
+        animation: backgroundAnimation 10s infinite alternate;
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background: linear-gradient(to right, #2c3e50, #000000);
+        }
+        100% {
+          background: linear-gradient(to right, #000000, #2c3e50);
+        }
+      }
+
+      
+      header {
+        text-align: center;
+        padding: 20px;
+        background: black;
+        color: white;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      header img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+        animation: pulse 2s infinite alternate;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+
+      
+      .intro,
+      .menu {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        animation: slideIn 1.5s ease-in-out;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      
+      .menu-item {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .menu-item img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .menu-item img:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 14px;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: white;
+        font-size: 20px;
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .social-icons a:hover {
+        transform: scale(1.2);
+        color: #ff4500;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="menu images/ozone logo.jpg"
+        width="120"
+        height="120"
+        alt="Ozone Logo"
+      />
+      <h1>OZONE LOUNGE VALLEY ARCADE</h1>
+    </header>
+
+    <section class="intro">
+      <h2>Ozone Background</h2>
+      <p>
+        Situated at <b>Valley Arcade</b> opposite Gitanga Road, it harbors a
+        lively nightlife serene for entertainment and recreation. Ozone is quite
+        a bar and restaurant with a variety of African cuisines and salads. It's
+        also ensuited with a variety of drinks from international and local
+        breweries & distilleries.
+      </p>
+      <p>
+        Ozone is the hub of music, KILIMANI'S nest of O'l Skool! With a variety
+        of experienced DJs, the place is ineptitude of boredom. The core of
+        quality service runs downward the hierarchical patterns to the customer.
+        A five-star-rated destination where no one would miss visiting. Welcome
+        and experience the thrilling environment!
+      </p>
+      <p class="quote">
+        <em>OUR SERVICE, OUR PRIDE!</em>
+        <a href="https://www.instagram.com/ozonelounge_lavington/"
+          >Have a glimpse of our socials.</a
+        >
+      </p>
+    </section>
+
+    <section class="menu">
+      <h3>OZONE MENU</h3>
+      <div class="menu-item">
+        <p><em>Discover the refreshing and diverse world of beer...</em></p>
+        <img
+          src="menu images/menu 1.jpeg"
+          width="400"
+          height="500"
+          alt="Beer Menu"
+        />
+      </div>
+
+      <div class="menu-item">
+        <h4>Unveil the diverse world of gin...</h4>
+        <p>
+          From classic juniper-forward profiles to contemporary infusions, gin
+          offers a refined taste experience.
+        </p>
+        <img
+          src="menu images/menu 2.jpg"
+          width="400"
+          height="550"
+          alt="Gin Menu"
+        />
+      </div>
+
+      <div class="menu-item">
+        <strong
+          >Indulge in the luxurious depth of our Cognac selection...</strong
+        >
+        <img
+          src="menu images/menu 3.jpg"
+          width="400"
+          height="550"
+          alt="Cognac Menu"
+        />
+      </div>
+
+      <div class="menu-item">
+        <p>Indulge in our curated collection of exquisite wines...</p>
+        <img
+          src="menu images/menu 4.jpg"
+          width="400"
+          height="550"
+          alt="Wine Menu"
+        />
+      </div>
+
+      <div class="menu-item">
+        <address>Delve into the vibrant world of tequila...</address>
+        <img
+          src="menu images/menu 5.jpg"
+          width="400"
+          height="550"
+          alt="Tequila Menu"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <strong
+          >NOTE: ALL drinks on the menu have special offers on different days.
+          Please inquire from your attendee.</strong
+        >
+      </p>
+      <article>
+        For more information, contact us: +254 737 447451 / +254 707 427230
+      </article>
+      <p class="feedback">We value your feedback!</p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/ozonelounge_lavington/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <a href="tel:+254737447451"><i class="fas fa-phone"></i></a> 
+        <a href="tel:+254707427230"><i class="fas fa-phone"></i></a>
+        
+
+      </div>
+    </footer>
+  </body>
+</html>
